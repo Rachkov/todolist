@@ -1,0 +1,9 @@
+.my-form {
+  border: 1px solid gray;
+  width: 70%;
+  padding: 20px;
+  margin: auto;
+}
+.my-form h4 {
+  text-align: center;
+}

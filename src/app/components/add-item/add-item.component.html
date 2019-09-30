@@ -1,0 +1,14 @@
+<div>
+  <div class="my-form">
+    <h4>Add task</h4>
+    <form (ngSubmit)="onSubmit()">
+      <div>
+        <div class="form-group">
+          <label>Task</label>
+          <input type="text" class="form-control" placeholder="Add task" [(ngModel)]="item.description" name="description" />
+        </div>
+        <input type="submit" value="Add" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+</div>

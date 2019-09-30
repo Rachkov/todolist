@@ -1,0 +1,13 @@
+<div *ngIf="items?.length > 0; else noItems">
+  <ul class="list-group" *ngFor="let item of items">
+    <li class="list-group-item">
+      <input type="checkbox" (change)="editItem($event, item)" [checked]="item.checked"/>
+      {{item.description}}
+      <i class="fa fa-trash delete" (click)="deleteItem($event, item)"></i>
+    </li>
+  </ul>
+</div>
+
+<ng-template #noItems>
+  <h5>no items</h5>
+</ng-template>
